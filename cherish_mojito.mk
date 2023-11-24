@@ -26,10 +26,7 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # CherishOS
 CHERISH_BUILD_TYPE := UNOFFICIAL
-
-# Maintainer Stuff
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=Deandra_Aditya
+CHERISH_MAINTAINER := Deandra_Aditya
 
 # Product Specifics
 PRODUCT_NAME := cherish_mojito
