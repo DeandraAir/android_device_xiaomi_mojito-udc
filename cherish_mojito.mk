@@ -14,8 +14,8 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Inherit from mojito device
 $(call inherit-product, device/xiaomi/mojito/device.mk)
 
-# Inherit some common SkylineUI stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common CherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Some Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -24,11 +24,15 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP  := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
-# SkylineUI Maintainer Flags
-SKYLINEUI_MAINTAINER := Deandra_Aditya
+# CherishOS
+CHERISH_BUILD_TYPE := UNOFFICIAL
+
+# Maintainer Stuff
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=Deandra_Aditya
 
 # Product Specifics
-PRODUCT_NAME := aosp_mojito
+PRODUCT_NAME := cherish_mojito
 PRODUCT_DEVICE := mojito
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10
