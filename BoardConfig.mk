@@ -9,7 +9,6 @@ BOARD_VENDOR := xiaomi
 DEVICE_PATH := device/xiaomi/mojito
 
 BUILD_BROKEN_DUP_RULES := true
-BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # A/B
@@ -216,5 +215,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # Inherit from the proprietary version
 include vendor/xiaomi/mojito/BoardConfigVendor.mk
 
-# Inherit from proprietary files for miuicamera
--include vendor/xiaomi/mojito-miuicamera/products/board.mk
+# Inherit from proprietary files for Leica Camera
+-include vendor/xiaomi/mojito-leicacamera/BoardConfigVendor.mk
